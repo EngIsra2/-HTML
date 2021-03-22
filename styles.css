@@ -1,0 +1,36 @@
+<style>
+            h1
+            {
+                color: #ff8f00;
+                font-size: 60%;
+                font-weight: normal;
+                }
+                #first_paragraph
+                {
+                    color: green;
+                    background-color: lightgrey;
+                    width: 50%;
+                    height: 50%;
+                }
+                #second_paragraph
+                {
+                    color:blue;
+                }
+                /* أحمد عدل الأبعاد*/
+                div{
+                    font-size: 200%;
+                }
+                span{
+                    font-style: italic;
+                    font-weight: bold;
+                    background-color: lightgrey;
+                    width: 300px;
+                    display: inline-block;
+                }
+                html
+                {
+                    background-image: url("background.JPG");
+                    background-size: 100% 100% ;
+                }
+
+        </style>

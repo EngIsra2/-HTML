@@ -3,17 +3,44 @@
     <head>
         <meta charset="utf-8">
         <title>القوائم </title>
+        <style>
+         #shopping_list 
+         {
+             list-style: circle;
+         }   
+        #shopping_list > li:not(.completed)
+            {
+                color: blue;
+            }
+            .completed 
+            {
+                color: grey;
+                text-decoration: line-through;
+                list-style: disc;
+            }
+            h1
+            { 
+                font-family: tahome, 'Segoe UI';
+                text-align: center;
+                
+            }
+            #goal_list > li
+            {
+                list-style: upper-roman;
+            }
+        </style>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <h1>قائمة المشتريات</h1>
-        <ul>
-            <li>تفاح</li>
+        <ul id="shopping_list">
+            <li class="completed">تفاح</li>
             <li>جزر</li>
-            <li><s>برتقال</s></li>
+            <li>برتقال</li>
         </ul>
-        <h2>أهدافي هذا الشهر</h2>
-        <ol>
-        <li>تعلم أساسيات الويب</li>
+        <h1>أهدافي هذا الشهر</h1>
+        <ol id="goal_list">
+        <li class="completed">تعلم أساسيات الويب</li>
         <li>تعلم منصات التطوير</li>
         <li>إنشاء مشروع أولي</li>
         </ol>

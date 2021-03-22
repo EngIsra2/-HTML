@@ -3,9 +3,20 @@
     <head>
         <meta charset="utf-8">
         <title>الجدوال</title>
+        <style>
+            table ,th, td
+            {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            tbody >tr:nth-child(odd)
+            {
+                background-color: lightgray;
+            }
+        </style>
     </head>
     <body>
-<table border="1">
+<table>
     <caption>الزبائن</caption>
     <thead>
         <tr>
